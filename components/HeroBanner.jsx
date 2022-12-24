@@ -1,21 +1,22 @@
 import Link from "next/link";
 import React from "react";
 
-const HeroBanner = () => {
+const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="Beats-solo">SMAll TEXT</p>
-        <h3>MID TEXT</h3>
-        <img src="" alt="" className="hero-banner-image" />
+        <p className="Beats-solo">{heroBanner.title}</p>
+        <h3>Best Deal</h3>
+        <h1>Winter</h1>
+        <img src={heroBanner.image} alt="" className="hero-banner-image" />
 
         <div>
-          <Link href="/product/ID">
-            <button type="button">Button Text</button>
+          <Link href={`/product/${heroBanner.isbn13}`}>
+            <button type="button">Shop Now</button>
           </Link>
           <div className="desc">
             <h5>Description</h5>
-            <p>DESCRIPTION</p>
+            <p>{heroBanner.subtitle}</p>
           </div>
         </div>
       </div>
