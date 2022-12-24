@@ -1,6 +1,7 @@
 import React from "react";
 import FooterBanner from "../components/FooterBanner";
 import HeroBanner from "../components/HeroBanner";
+import Products from "../components/Products";
 
 const Home = ({ data }) => {
   const products = data.books;
@@ -13,9 +14,7 @@ const Home = ({ data }) => {
       </div>
       <div className="products-container">
         {products?.map((product) => (
-          <div>
-            <img src={product.image} alt="" />
-          </div>
+          <Products key={product.isbn13} product={product}></Products>
         ))}
       </div>
       Footer

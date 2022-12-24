@@ -5,11 +5,10 @@ const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="Beats-solo">{heroBanner.title}</p>
+        <p className="beats-solo">{heroBanner.title}</p>
         <h3>Best Deal</h3>
         <h1>Winter</h1>
         <img src={heroBanner.image} alt="" className="hero-banner-image" />
-
         <div>
           <Link href={`/product/${heroBanner.isbn13}`}>
             <button type="button">Shop Now</button>
