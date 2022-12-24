@@ -13,7 +13,7 @@ const Products = ({ product: { title, image, price, isbn13: id, slug } }) => {
             height={250}
             className="product-image"
           />
-          <p className="product-name">{title}</p>
+          <p className="product-name">{title.slice(0, 20)}</p>
           <p className="product-price">{price}$</p>
         </div>
       </Link>

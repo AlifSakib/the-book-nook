@@ -5,7 +5,8 @@ import {
   AiOutlinePlus,
   AiOutlineStar,
 } from "react-icons/ai";
-const ProductDetails = ({ data }) => {
+import Products from "../../components/Products";
+const ProductDetails = ({ data, products }) => {
   const { title, image, price, desc, authors, rating } = data;
   return (
     <div>
@@ -58,16 +59,16 @@ const ProductDetails = ({ data }) => {
         </div>
       </div>
 
-      {/* <div className="maylike-products-wrapper">
+      <div className="maylike-products-wrapper">
         <h2>You may also like</h2>
         <div className="marquee">
           <div className="maylike-products-container track">
-            {products.map((item) => (
-              <Product key={item._id} product={item} />
+            {products.books.map((item) => (
+              <Products key={item.isbn13} product={item} />
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
@@ -88,8 +89,11 @@ export async function getServerSideProps({ params }) {
   const res = await fetch(`https://api.itbook.store/1.0/books/${params.id}`);
   const data = await res.json();
 
+  const res2 = await fetch("https://api.itbook.store/1.0/new");
+  const products = await res2.json();
+
   // Pass data to the page via props
-  return { props: { data } };
+  return { props: { data, products } };
 }
 
 export default ProductDetails;
