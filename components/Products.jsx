@@ -5,7 +5,7 @@ const Products = ({ product: { title, image, price, isbn13: id, slug } }) => {
   return (
     <div>
       <Link href={`/product/${id}`}>
-        <div className="product-card">
+        <div className="">
           <img
             src={image && image}
             alt=""

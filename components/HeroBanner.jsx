@@ -6,8 +6,9 @@ const HeroBanner = ({ heroBanner }) => {
     <div className="hero-banner-container">
       <div>
         <p className="beats-solo">{heroBanner.title}</p>
-        <h3>Best Deal</h3>
-        <h1>Winter</h1>
+        <h3>Get a 50%</h3>
+        <h1>Discount</h1>
+        <p>{heroBanner.desc}</p>
         <img src={heroBanner.image} alt="" className="hero-banner-image" />
         <div>
           <Link href={`/product/${heroBanner.isbn13}`}>

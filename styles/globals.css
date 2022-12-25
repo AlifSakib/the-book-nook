@@ -81,8 +81,9 @@ span.text-red {
 
 .logo {
   color: gray;
-  font-size: 18px;
-
+  font-size: 38px;
+  font-weight: bold;
+  color: #3F72AF;
 }
 
 .cart-icon {
@@ -104,7 +105,7 @@ span.text-red {
   right: -8px;
   font-size: 12px;
   color: #eee;
-  background-color: #f02d34;
+  background-color: #3F72AF;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -158,6 +159,7 @@ span.text-red {
   background-color: #dcdcdc;
   border-radius: 15px;
   position: relative;
+  margin-top: 60px;
   height: 500px;
   line-height: 0.9;
   width: 100%;
@@ -200,8 +202,6 @@ span.text-red {
   background-size: cover;
   top: 0%;
   right: 20%;
-
-
 }
 
 
