@@ -17,8 +17,7 @@ const Home = ({ data }) => {
           <Products key={product.isbn13} product={product}></Products>
         ))}
       </div>
-      Footer
-      <FooterBanner />
+      <FooterBanner heroBanner={products.length && products} />
     </>
   );
 };
