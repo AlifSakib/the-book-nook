@@ -16,4 +16,4 @@
 
 ## Tech Stack
 
-React, Vanilla CSS , Next.js
+React, Vanilla CSS , Next.js , and
