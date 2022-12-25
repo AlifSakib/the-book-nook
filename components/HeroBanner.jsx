@@ -5,7 +5,7 @@ const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
       <div>
-        <p className="beats-solo">{heroBanner.title}</p>
+        <p className="banner">{heroBanner.title}</p>
         <h3>Get a 50%</h3>
         <h1>Discount</h1>
         <p>{heroBanner.desc}</p>
