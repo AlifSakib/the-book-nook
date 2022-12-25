@@ -34,7 +34,7 @@ const ProductDetails = ({ data, products }) => {
           </div>
           <h4>Details: </h4>
           <p>{desc}</p>
-          <p className="price">${price}</p>
+          <p className="price">{price}</p>
           <div className="quantity">
             <h3>Quantity:</h3>
             <p className="quantity-desc">
