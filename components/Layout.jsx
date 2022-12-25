@@ -8,6 +8,7 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Head>
         <title>The Book Nook</title>
+        <link rel="shortcut icon" href="/agenda.png" />
       </Head>
       <header>
         <Navbar />
